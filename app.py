@@ -12,7 +12,6 @@ posts = [
         "texto": "teste2.0"
     }
 ]
-
 # Comentario
 
 
