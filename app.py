@@ -5,11 +5,11 @@ app = Flask("Meu app")
 posts =[
     {
         "titulo": "Minha primeira postagem",
-        "texto": "teste.10"
+        "texto": "teste"
     },
     {
         "titulo": "Segundo post",
-        "texto": "outro teste"
+        "texto": "teste2.0"
     }
 ]
 
@@ -18,4 +18,4 @@ posts =[
 def exibir_entradas():
     """Rota principal da aplicação"""
     entradas = posts #Mock das postagens
-    return render_template('exibir_entradas.html',entradas = entradas)
+    return render_template('exibir_entradas.html',entradas = [])
