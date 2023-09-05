@@ -1,3 +1,5 @@
 <h1>Meu Blog</h1> <!-- Titulo 1 -->
-<h2>Meu primeiro post</h2> <!-- Titulo 2 -->
-<p>{{ mensagem }}</p> <!-- Parágrafo de texto -->
+
+{% for entrada in entradas%}
+<h2>{{ entrada.titulo }}</h2> <!-- Titulo 2 -->
+<p>{{ entradas.texto }}</p> <!-- Parágrafo de texto -->
