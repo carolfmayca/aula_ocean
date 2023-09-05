@@ -18,4 +18,4 @@ posts =[
 def exibir_entradas():
     """Rota principal da aplicação"""
     entradas = posts #Mock das postagens
-    return render_template('exibir_entradas.html',entradas = [])
+    return render_template('exibir_entradas.html',entradas = entradas)
