@@ -1,8 +1,8 @@
-from flask import Flask,render_template
+from flask import Flask, render_template
 
 app = Flask("Meu app")
 
-posts =[
+posts = [
     {
         "titulo": "Minha primeira postagem",
         "texto": "teste"
@@ -13,9 +13,10 @@ posts =[
     }
 ]
 
-# Comenario
+# Comentario
+
+
 @app.route('/')
 def exibir_entradas():
-    """Rota principal da aplicação"""
-    entradas = posts #Mock das postagens
-    return render_template('exibir_entradas.html',entradas = entradas)
+    entradas = posts  # Mock das postagens
+    return render_template('exibir_entradas.html', entradas=entradas)
