@@ -12,8 +12,6 @@ posts = [
         "texto": "teste2.0"
     }
 ]
-# Comentario
-
 
 @app.route('/')
 def exibir_entradas():
